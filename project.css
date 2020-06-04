@@ -1,0 +1,331 @@
+/*-------------body-------------------*/
+		body{
+			margin: auto;
+			width: 1280px;
+			background-color: #000;
+		}
+		@keyframes neon{
+			0% { box-shadow: 0px 0px 500px #ff004f;}
+			5% { box-shadow: 0px 0px 500px #ff0000;}
+			10% { box-shadow: 0px 0px 500px #d13632;}
+			15% { box-shadow: 0px 0px 500px #e2571e;}
+			20% { box-shadow: 0px 0px 500px #ec883a;}
+			25% { box-shadow: 0px 0px 500px #e69333;}
+			30% { box-shadow: 0px 0px 500px #d6a525;}
+			35% { box-shadow: 0px 0px 500px #cdb924;}
+			40% { box-shadow: 0px 0px 500px #d1d22c;}
+			45% { box-shadow: 0px 0px 500px #ffff00;}
+			50% { box-shadow: 0px 0px 500px #96bf33;}
+			55% { box-shadow: 0px 0px 500px #479e1b;}
+			60% { box-shadow: 0px 0px 500px #1ca55a;}
+			65% { box-shadow: 0px 0px 500px #1d829e;}
+			70% { box-shadow: 0px 0px 500px #28af8e;}
+			75% { box-shadow: 0px 0px 500px #279edd;}
+			80% { box-shadow: 0px 0px 500px #503fa9;}
+			85% { box-shadow: 0px 0px 500px #8a2aa7;}
+			90% { box-shadow: 0px 0px 500px #a8225f;}
+			95% { box-shadow: 0px 0px 500px #c83964;}
+			100% { box-shadow: 0px 0px 500px #d33264;}
+		}
+		@keyframes cimneon{
+			0% { text-shadow: 0px 0px 10px #ff004f;}
+			5% { text-shadow: 0px 0px 10px #ff0000;}
+			10% { text-shadow: 0px 0px 10px #d13632;}
+			15% { text-shadow: 0px 0px 10px #e2571e;}
+			20% { text-shadow: 0px 0px 10px #ec883a;}
+			25% { text-shadow: 0px 0px 10px #e69333;}
+			30% { text-shadow: 0px 0px 10px #d6a525;}
+			35% { text-shadow: 0px 0px 10px #cdb924;}
+			40% { text-shadow: 0px 0px 10px #d1d22c;}
+			45% { text-shadow: 0px 0px 10px #ffff00;}
+			50% { text-shadow: 0px 0px 10px #96bf33;}
+			55% { text-shadow: 0px 0px 10px #479e1b;}
+			60% { text-shadow: 0px 0px 10px #1ca55a;}
+			65% { text-shadow: 0px 0px 10px #1d829e;}
+			70% { text-shadow: 0px 0px 10px #28af8e;}
+			75% { text-shadow: 0px 0px 10px #279edd;}
+			80% { text-shadow: 0px 0px 10px #503fa9;}
+			85% { text-shadow: 0px 0px 10px #8a2aa7;}
+			90% { text-shadow: 0px 0px 10px #a8225f;}
+			95% { text-shadow: 0px 0px 10px #c83964;}
+			100% { text-shadow: 0px 0px 10px #d33264;}
+		}
+		.neon{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			animation-iteration-count: infinite;
+			animation-name: neon;
+			animation-duration: 20s;
+		}
+/*------------------a-----------------*/
+		a, a:link, a:visited{
+			color: black;
+			text-decoration: none;
+		}
+		a:hover{
+			color: blue;
+			transition: color 0.2s;
+		}
+		.torzs a{
+			color: #c0c;
+		}
+/*---------------fejléc----------------*/
+		.fejlec{
+			width: 100%;
+			height: 100px;
+			background-color: #666;
+			animation-iteration-count: infinite;
+			animation-name: cimneon;
+			animation-duration: 20s;
+			font-family: Arial;
+		}
+		.fejlec img{
+			float: left;
+			width: 100px;
+			margin-left: 50px;
+		}
+		.fejlec h1{
+			float: left;
+			margin-left: 20px;
+			margin-top: 30px;
+			color: #555;	
+			padding-left: 30px;
+			font-style: italic;
+		}
+/*---------------menü-------------------*/
+		.menu{
+			width: 100%;
+			height: 50px;
+			background-color: #d9d9d9;
+		}
+		.menu table{
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+		.menu tr, td{
+			width: 20%;
+			height: 100%;
+		}
+		.menu ul{
+			list-style-type: none;
+			padding-left: 0;
+			margin: 0px;
+			background-color: #e0e0e0;
+		}
+		.menu li{
+			padding: 8px 8px;
+		}
+		.menu li:hover{
+			background-color: #d0d0d0;
+		}
+		p.active{
+			font-weight: bold;
+		}
+/*-------------oldalsáv-------------------*/
+		.oldalsav{
+			float: left;
+			width: 15%;
+			height: 100%;
+			min-height: 700px;
+			background-color: #8f8f8f;
+			font-family: Arial;
+		}
+		.oldalsav div{
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+		.oldalsav img{
+			width: 75px;
+			transition: transform 0.5s;
+			transition-delay: 2s;
+			transition-timing-function: linear;
+		}
+		.oldalsav img:hover{
+			transition: transform 2s;
+			transform: rotate(360deg);
+			transition-timing-function: linear;
+		}
+		.oldalsav table{
+			border: none;
+			width: 100%;
+		}
+		.oldalsav td, .oldalsav tr{
+			border: none;
+			height: 128px;
+			text-align:center;
+		}
+		.oldalsav img{
+			border-radius: 20px;
+		}
+/*--------------törzs------------------*/
+		.torzs{
+			float: left;
+			width: 85%;
+			min-height: 700px;
+			height: 100%;
+			background-color: #ccc;
+		}
+		.torzs div{
+			padding-top: 9px;
+			padding-left: 20px;
+		}
+		.torzs div div{
+			padding-top: 0px;
+			font-size: 18px;
+		}
+		.torzs p{
+			text-align:justify;
+			font-size: 18px;
+			width: 95%;
+		}
+		.torzs span{
+			font-size: 14px;
+		}
+		.torzs ul{
+			font-size: 17px;
+			width: 90%;
+		}
+		.torzs ol{
+			font-size: 18px;
+		}
+		.imgcontainer{
+			width: 100%;
+		}
+		.imgcontainer img{
+			width: 426px;
+			height: 240px;
+			padding-left: 50px;
+			padding-bottom: 10px;
+		}
+		.torzs p::first-letter{
+			font-size: 22px;
+		}
+		.szines{
+			background-color: #8f8f8f;
+		}
+/*-------------lábléc-------------------*/
+		.lablec{
+			clear: both;
+			width: 100%;
+			height: 50px;
+			background-color: #666;
+			text-align: right;
+		}
+		.lablec p{
+			padding-top: 15px;
+			padding-right: 15px;
+		}
+/*-------------------------------------*/
+		.hirlevelbox{
+			border: none;
+			width: 320px;
+			float: left;
+		}
+		
+		#frogdiv{
+			position: relative;
+		}
+		#frog{
+			position: absolute;
+			right: 0;
+			bottom: -4px;
+		}
+		#froggo{
+			width: 300px;
+			margin-top: 260px;
+			opacity: 0;
+		}
+		#froggo:hover{
+			opacity: 100;
+		}
+		.transform{
+			transform: rotate(-20deg);
+		}
+/*---------------print------------------*/
+		@media print{
+			.fejlec img, .oldalsav img{
+				display: none;
+			}
+			.torzs img{
+				width: 46%;
+				height: 46%;
+				padding-left: 22pt;
+			}
+			div {
+				width: 700pt;
+			}
+			.oldalsav{
+				display: none;
+			}
+			.menu{
+				display: none;
+			}
+			.lablec{
+				position: absolute;
+				bottom: 10px;
+			}
+			@keyframes neon{
+				display:none;
+			}
+			@keyframes cimneon{
+				display:none;
+			}
+			
+		}
+		@page {
+			margin: 2cm;
+		}
+		@media screen and (max-width: 1280px) {
+			@keyframes neon{
+				display:none;
+			}
+		}
+/*---------------dropdown------------------*/
+
+/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+		.dropdown:hover{
+			cursor: default;
+		}
+
+/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			top: 47px;
+			left: -10px;
+			background-color: #e0e0e0;
+			min-width: 150px;
+			box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3);
+			z-index: 1;
+		}
+
+/* Links inside the dropdown */
+		.dropdown-content a {
+			color: black;
+			padding: 0px 0px;
+			text-decoration: none;
+			display: block;
+		}
+
+/* Change color of dropdown links on hover */
+		.dropdown-content a:hover{
+			background-color: #d0d0d0;
+		}
+
+/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content{
+			display: block;
+		}
+
+/* Change the background color of the dropdown button 
+when the dropdown content is shown */
+		.dropdown:hover .dropbtn{
+			color: blue;
+			transition: color 0.5s
+		}

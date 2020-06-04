@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="hu">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hírlevél</title>
+	<link rel="stylesheet" type="text/css" href="project.css">
+</head>
+
+<body>
+	<div class="neon">
+		<div class="fejlec">
+			<img src="si.png" title="Space Invaders Alien" alt="space invaders alien">
+			<h1>Bevezetés a videojátékok világába</h1>
+		</div>
+		
+		<div class="menu">
+			<table>
+				<tr>
+					<td>
+						<a href="1kezdooldal.html">Kezdőlap</a>
+					</td>
+					<td>
+						<a href="2kezdetek.html">A kezdetek</a>
+					</td>
+					<td>
+						<div class="dropdown">
+							<p class="dropbtn">Videojáték műfajok</p>
+							<div class="dropdown-content">
+								<ul>
+									<li><a href="3fps.html">FPS Shooter</a></li>
+									<li><a href="3rpg.html">Szerepjáték</a></li>
+									<li><a href="3strat.html">Stratégiai</a></li>
+									<li><a href="3platformer.html">Platformer</a></li>
+								</ul>
+							</div>
+						</div>				</td>
+					<td>
+						<a href="4pozitiv.html">A játékok pozitív hatásai</a>
+					</td>
+					<td>
+						<p class="active">Hírlevél</p>
+					</td>					
+				</tr>
+			</table>
+		</div>
+		
+		<div class="szines">
+			<div class="oldalsav">
+				<div>Videojátékos cikkekért látogasd az alábbi oldalakat:</div>
+				<table>
+					<tr>		
+						<td><a href="https://www.gamestar.hu"><img src="gamestar.png" title="Gamestar Hungary" alt="gamestarhu">
+						<br>
+						Gamestar</a>
+						</td>
+					</tr>
+					<tr>		
+						<td><a href="https://hu.ign.com"><img src="ign.png" title="IGN Hungary" alt="ignhu">
+						<br>
+						IGN Hungary</a>
+						</td>
+					</tr>
+					<tr>		
+						<td><a href="https://gepigeny.hu"><img src="gepigeny.png" title="Gépigény.hu" alt="gepigenyhu">
+						<br>
+						Gépigény</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="torzs" id="frogdiv">
+				<div >
+					<div>
+						<h3>Ha tetszett amit olvastál, íratkozz fel bátran a nem létező hírlevelünkre!</h3>
+					</div>
+					<form action="hirlevel.html" method="post">
+						  <div>
+							<fieldset class="hirlevelbox">
+								<legend></legend>
+								Kérlek add meg a nemed:<br>
+								<label for="genderid1">Férfi: </label>
+								<input type="radio" id="genderid1" name="gender" value="1">
+
+								<label for="genderid2">Nő: </label>
+								<input type="radio" id="genderid2" name="gender" value="2">
+
+								<label for="genderid3">Helikopter: </label>
+								<input type="radio" id="genderid3" name="gender" value="3">
+								
+								<label for="genderid3">Egyéb: </label>
+								<input type="radio" id="genderid4" name="gender" value="3" disabled> <br><br>
+								
+								<label for="lastname" >Vezetéknév: <br>
+								</label>
+								<input type="text" name="lastname" id="lastname" maxlength="20" size="30">
+									<br>
+								<label for="firstname">Keresztnév: <br>
+								</label>
+								<input type="text" name="firstname" id="firstname" maxlength="20" size="30">
+									<br>
+								<label for="email">E-mail: <br>
+								</label>
+								<input type="email" name="email" id="email" placeholder="pelda@email.hu" size="30">
+									<br>
+								<label>Születési dátum: <br> 
+								<input type="date" name="date" value="" min="1900-01-01" max="2019-12-31">
+								</label> 
+									<br>
+								Melyik megyében élsz?<br>	
+								<select name="megye">
+									<option selected disabled>Válassz megyét!</option>
+									<option value="bk">Bács-Kiskun</option>
+									<option value="baranya">Baranya</option>
+									<option value="bekes">Békés</option>
+									<option value="baz">Borsod-Abaúj-Zemplén</option>
+									<option value="csongrad">Csongrád-Csanád</option>
+									<option value="fejer">Fejér</option>
+									<option value="gyms">Győr-Moson-Sopron</option>
+									<option value="hb">Hajdú-Bihar</option>
+									<option value="heves">Heves</option>
+									<option value="jnsz">Jász-Nagykun-Szolnok</option>
+									<option value="ke">Komárom-Esztergom</option>
+									<option value="nograd">Nógrád</option>
+									<option value="pest">Pest</option>
+									<option value="somogy">Somogy</option>
+									<option value="szszb">Szabolcs-Szatmár-Bereg</option>
+									<option value="tolna">Tolna</option>
+									<option value="vas">Vas</option>
+									<option value="veszprem">Veszprém</option>
+									<option value="zala">Zala</option>
+								</select> <br>
+								
+								<label for="submitbutton" ><br></label>
+								<input type="submit" value="Küldés" id="submitbutton" class="transform">
+							</fieldset>
+						  </div>
+						</form>
+				</div>
+				<div id="frog">
+					<img src="mlgfrog.gif" alt="mlg" id="froggo">
+				</div>
+			</div>
+		</div>
+		
+		<div class="lablec">
+			<p>Copyright © 2019 by Rockos</p>
+		</div>
+	</div>
+	
+</body>
+
+</html>
